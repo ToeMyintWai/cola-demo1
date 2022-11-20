@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Htain Lin Thant</title>
+    <meta name="Keywords" content="Portrait,Minimalism,Street" />
+    <meta name="Discription" content="" />
+    <link rel="icon" type="image/x-icon" href="favicon1.ico" />
+
+    <!--font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Dancing+Script:wght@600&family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <!--font awesome link-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!--external css link-->
+    <link rel="stylesheet" href="style.css" />
+
+    <!--script link-->
+    <script type="text/javascript" src="index.js" defer></script>
+  </head>
+
+  <body>
+    <!--navigation bar-->
+    <header class="header">
+      <div class="container">
+        <div class="nav-container">
+          <nav class="navbar">
+            <div class="brand">
+              <h1>HTAIN LIN THANT</h1>
+              <p>Photography</p>
+            </div>
+            <div class="menu">
+              <span>Menu</span>
+            </div>
+
+            <!--nav items-->
+            <ul class="nav-menu">
+              <li class="nav-item"><a href="">Home</a></li>
+              <li id="portrait" class="nav-item">Portrait</li>
+              <li id="minimal" class="nav-item">Minimalism</li>
+              <li class="nav-item">Street</li>
+              <li class="nav-item"><a href="#about">About</a></li>
+              <li class="nav-item"><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!--image-gallery-->
+    <div class="image-gallery">
+      <div class="image-column">
+        <img class="main-img" src="main/main-img0.jpg" alt="portrait" />
+        <img class="main-img" src="main/main-img1.jpg" alt="" />
+        <img class="main-img" src="main/main-img2.jpg" alt="" />
+        <img class="main-img" src="main/main-img3.jpg" alt="" />
+      </div>
+      <div class="image-column">
+        <img class="main-img" src="main/main-img4.jpg" alt="Minimalism" />
+        <img class="main-img" src="main/main-img5.jpg" alt="" />
+        <img class="main-img" src="main/main-img6.jpg" alt="" />
+        <img class="main-img" src="main/main-img7.jpg" alt="" />
+      </div>
+      <div class="image-column">
+        <img class="main-img" src="main/main-img8.jpg" alt="" />
+        <img class="main-img" src="main/main-img9.jpg" alt="" />
+        <img class="main-img" src="main/main-img10.jpg" alt="" />
+        <img class="main-img" src="main/main-img11.jpg" alt="" />
+      </div>
+    </div>
+
+    <!--about me section-->
+    <h3 id="about">About Me</h3>
+    <div class="about-me-section">
+      <div class="about-column about-text">
+        <h2>Hi I am Htain Lin Thant</h2>
+        <p>
+          I am photographer who love taking portrait and street photos.My friend
+          call me Cola,my nick name.I start my Photography Career since in my school
+          days.If you want beautiful and amazing photos,you can contact me via emil and phone.I am
+          curently living in Mandalay.
+        </p>
+      </div>
+
+      <!---about me image-->
+      <div class="about-column about-image">
+        <img src="profile/profile.jpeg" alt="profile" />
+      </div>
+    </div>
+
+    <!---contact section-->
+    <h3 id="contact">Contact</h3>
+    <div class="contact-me">
+      <div class="contact-col">
+        <h5>Get In Touch</h5>
+
+        <!--emil form-->
+        <form action="mailto:" class="form-section">
+          <input type="text" id="name" placeholder="NAME" required />
+          <input type="email" id="email" placeholder="EMAIL" required />
+          <input
+            type="phone-number"
+            id="phone"
+            placeholder="PHONE NUMBER"
+            required
+          />
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="MESSAGE"
+          ></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+
+      <!--contact icons-->
+      <div class="contact-col">
+        <ul class="contact-lists">
+          <li>
+            <i class="fa-solid fa-location-dot"></i
+            ><span class="location">Mandalay</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-phone"></i
+            ><span class="contact-detail"
+              ><a href="tel:+959972699909">09972699909</a></span
+            >
+          </li>
+          <li>
+            <i class="fa-solid fa-envelope"></i
+            ><span class="contact-detail"
+              ><a href="mailto:htainlinthant.zign@gmail.com"
+                >htainlinthant.zign@gmail.com</a
+              ></span
+            >
+          </li>
+        </ul>
+
+        <hr />
+        <div class="social-media">
+          <a href="https://www.facebook.com/htainlinthant.kolar">
+            <i class="fa-brands fa-facebook"></i
+          ></a>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+        <hr />
+      </div>
+    </div>
+
+    <footer class="footer-section">
+      <span class="footer-social"
+        ><i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-twitter"></i>
+      </span>
+      <section>&copy<b>2022</b> Htain Lin Thant</section>
+    </footer>
+  </body>
+</html>

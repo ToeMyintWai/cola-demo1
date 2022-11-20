@@ -1,0 +1,272 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: #fdfdfd;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+a {
+  color: #020205;
+}
+
+h1 {
+  font-family: "DM Serif Display", serif;
+  font-size: 2rem;
+  margin: 20px 0 10px;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  color: #020205;
+}
+
+h3 {
+  font-family: "DM Serif Display", serif;
+  font-size: 1.5rem;
+  margin-bottom: 25px 0 25px
+  
+}
+
+/***nav section***/
+
+.nav-container {
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.brand p {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.5rem;
+  color: #020205;
+  margin-bottom: 20px;
+}
+
+.menu {
+  display: none;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-item {
+  padding: 0 15px;
+  cursor: pointer;
+}
+
+.nav-item a {
+  font-family: "Montserrat", sans-serif;
+}
+
+/***image gallery section***/
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  width: 90%;
+
+  margin: 35px auto;
+}
+
+.image-column {
+  flex: 33.3%;
+  max-width: 33.3%;
+  padding: 0 4px;
+}
+
+.image-column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/***about me section***/
+
+.about-me-section {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 35px auto;
+  line-height: 1.5;
+}
+
+.about-column {
+  flex: 50%;
+  max-width: 50%;
+}
+
+.about-text {
+  padding: 15px 40px;
+}
+.about-column p {
+  font-size: 16px;
+  color: #020205;
+}
+
+.about-image {
+  display: flex;
+  justify-content: center;
+}
+
+/***contact-me****/
+
+.contact-me {
+  display: flex;
+  width: 90%;
+  margin: 35px auto;
+  justify-content: center;
+}
+
+.contact-col {
+  flex: 33.3%;
+  max-width: 33.3%;
+  padding: 0 30px;
+  margin: 25px 0;
+}
+
+/***form***/
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.form-section input,
+.form-section textarea {
+  border-radius: 5px;
+  border: 2px;
+  margin: 10px 0;
+  outline: none;
+  padding: 15px;
+  outline: none;
+  background-color: #f5f5f5;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.form-section button {
+  padding: 12px;
+  background-color: #3ec70b;
+  border: 0;
+  margin: 10px auto;
+  width: 100px;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-section button:hover {
+  background-color: #38E54D;
+}
+
+/***contact me right side***/
+.contact-lists {
+  line-height: 2.5;
+}
+
+.fa-solid {
+  font-size: 20px;
+}
+
+.social-media .fa-brands {
+  font-size: 40px;
+}
+
+.social-media {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.location {
+  margin-left: 30px;
+}
+
+.contact-detail {
+  margin-left: 25px;
+}
+
+/***footer section**/
+
+.footer-section {
+  height: 150px;
+  background-color: #020205;
+  color: #fdfdfd;
+  text-align: center;
+  margin-top: 35px;
+  padding-top: 50px;
+}
+
+.footer-social .fa-brands {
+  margin: 15px 6px;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-container {
+    width: 100%;
+  }
+
+  .menu {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-family: "Montserrat", sans-serif;
+    cursor: pointer;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    display: none;
+  }
+
+  .nav-item {
+    padding: 5px 0;
+    width: 100%;
+    background-color: #fdfdfd;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .image-gallery {
+    flex-direction: column;
+  }
+
+  .image-column {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .about-me-section {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .about-column {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .contact-me {
+    flex-direction: column;
+  }
+
+  .contact-col {
+    flex: 100%;
+    max-width: 100%;
+    padding: 0 20px;
+  }
+}
